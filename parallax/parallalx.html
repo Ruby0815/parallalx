@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/parallelx.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="hero mask">
+      <div class="headerMask">
+        <h1>Save Our Nature</h1>
+      </div>
+    </header>
+    <div>
+      <img src="../images/bird1.png" alt="bird1" id="b1" />
+      <img src="../images/bird1.png" alt="bird2" id="b2" />
+      <img src="../images/bird1.png" alt="bird3" id="b3" />
+      <img src="../images/rab1.png" alt="sun" id="rabbit" />
+      
+     <img src="../images/sunnew.png" alt="sun" id="sun" />
+     </div>
+    <main>
+      
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+        perferendis quod ducimus optio nulla tenetur odio obcaecati eum facilis
+        distinctio officia maxime, voluptatum illo iusto doloribus voluptatem
+        exercitationem numquam earum.
+      </p>
+      <p>
+        Temporibus possimus et vero dolores voluptatem eum maxime recusandae ad
+        explicabo quidem quae delectus sequi accusamus voluptates ullam dicta
+        provident harum pariatur natus necessitatibus animi soluta totam,
+        inventore dolorum? Qui.
+      </p>
+      <p>
+        Architecto earum veniam in quibusdam ullam beatae fuga placeat
+        reiciendis itaque veritatis. Ipsum ad, error quasi labore, delectus
+        repellat facere asperiores dignissimos voluptatibus quod placeat beatae
+        quia consequatur quibusdam porro.
+      </p>
+    </main>
+    <script>
+              // console.log("hi");
+              //first bird
+              window.addEventListener('scroll',function(){
+             let scroll_Pos=window.scrollY;
+
+             let dis1=scroll_Pos*1.2;
+              document.querySelector('#b1').style.transform="translateX("+dis1+
+               "px)";
+              })
+              /
+              //second bird
+              window.addEventListener('scroll',function(){
+             let scroll_Pos=window.scrollY;
+
+             let dis1=scroll_Pos*2;
+             let dis2=scroll_Pos*.6;
+              document.querySelector('#b2').style.transform="translate("+dis1+ 
+               "px," +"-"+dis2+"px)";
+              //  console.log(dis1);
+              //  console.log(dis2);
+              })
+              //third bird
+
+              window.addEventListener('scroll',function(){
+             let scroll_Pos=window.scrollY;
+
+             let dis1=scroll_Pos*3.5;
+             let dis2=scroll_Pos*1.8;
+              document.querySelector('#b3').style.transform="translate("+dis1+ 
+               "px," +"-"+dis2+"px)";
+              //  console.log(dis1);
+              //  console.log(dis2);
+              })
+              //for rabbit
+
+            window.addEventListener('scroll',function(){
+             let scroll_Pos=window.scrollY;
+
+             let dis1=scroll_Pos*.9;
+              document.querySelector('#rabbit').style.transform="translateX("+"-"+dis1+
+               "px)";})
+
+
+
+
+
+          //for sun
+          window.addEventListener('scroll',function(){
+             let scroll_Pos=window.scrollY;
+
+             let dis1=scroll_Pos*.9;
+              document.querySelector('#sun').style.transform="translateY("+"-"+dis1+
+               "px)";
+              })
+    </script>
+  </body>
+</html>
